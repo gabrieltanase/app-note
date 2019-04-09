@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@import '../src/app/shared/variables';
+
+html,
+body {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/** General Styles */
+input.form-control:focus,
+textarea.form-control:focus {
+    box-shadow: none;
+}
+textarea.form-control {
+    resize: none;
+}
+
+.card-body {
+    input,
+    textarea {
+        border: none;
+    }
+}
+
+/** MAT DIALOG  STYLES **/
+.delete-note-modalbox {
+    mat-dialog-container {
+        color: $add-note-font;
+        padding: 30px;
+        background: $white;
+        text-align: center;
+        height: 100%;
+        width: 570px;
+
+        .text-muted {
+            margin-top: 20px;
+        }
+    }
+    mat-dialog-actions {
+        justify-content: space-evenly;
+        margin-bottom: 0;
+
+        .btn {
+            padding: 5px 30px;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 18px;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &.cancel {
+                background-color: $cancel-btn;
+            }
+
+            &.confirm {
+                background-color: $confirm-btn;
+            }
+        }
+    }
+}

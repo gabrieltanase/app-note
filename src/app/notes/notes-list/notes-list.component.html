@@ -1,0 +1,6 @@
+<div class="row notes-list">
+    <p *ngIf="!notes.length">We dont have notes</p>
+    <div class="col-md-4" *ngFor="let note of notes">
+        <app-note [note]="note"></app-note>
+    </div>
+</div>

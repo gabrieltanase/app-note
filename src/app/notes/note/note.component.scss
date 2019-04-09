@@ -1,0 +1,101 @@
+@import '../../shared/variables';
+
+.note-card {
+    border: 1px solid $gray-border;
+    border-radius: 5px;
+    background-color: $bg-note;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    color: $gray-font;
+    font-family: 'Source Sans Pro';
+    margin-bottom: 30px;
+
+    hr {
+        background-color: $bg-note;
+        margin: 10px 0;
+    }
+
+    input,
+    textarea {
+        background-color: $bg-note;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+    i {
+        cursor: pointer;
+    }
+
+    .card-title {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .action-buttons {
+        visibility: hidden;
+        .edit {
+            font-size: 23px;
+            color: $icon-edit;
+        }
+        .delete {
+            font-size: 27px;
+            margin-right: 10px;
+            color: $icon-delete;
+        }
+    }
+
+    &:hover {
+        .action-buttons {
+            visibility: visible;
+        }
+    }
+
+    &.edit-mode {
+        z-index: 2;
+
+        button {
+            background-color: $save-btn;
+            color: $white;
+            text-transform: uppercase;
+            padding: 6px 20px;
+        }
+
+        input,
+        textarea {
+            padding: 0;
+            color: $gray-font;
+        }
+        input {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        textarea {
+            font-size: 18px;
+            font-weight: 400;
+            min-height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+        .card-title {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.overlay {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+}

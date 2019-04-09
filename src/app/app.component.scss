@@ -1,0 +1,37 @@
+@import './shared/variables';
+
+nav {
+    background-color: $bg-nav;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $white;
+
+    .navbar-brand {
+        font-size: 22px;
+        line-height: 39px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.notes-list-container {
+    background: $bg-note-list;
+    padding: 40px 0;
+}
+
+.add-note-container {
+    border-top: 1px solid $gray-border;
+    border-bottom: 1px solid $gray-border;
+    background: $bg-add-note;
+    padding: 40px 0;
+    color: $add-note-font;
+}
+
+.footer-container {
+    padding: 40px 0;
+    font-family: 'Source Sans Pro';
+    font-size: 22px;
+    color: $footer-font;
+}

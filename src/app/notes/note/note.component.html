@@ -1,0 +1,33 @@
+<div class="overlay" *ngIf="editMode"></div>
+
+<div class="card note-card" [ngClass]="{ 'edit-mode': editMode }">
+    <div class="card-body" *ngIf="!editMode">
+        <h5 class="card-title">{{ note.title }}</h5>
+        <hr />
+        <p class="card-text">{{ note.description }}</p>
+        <div class="card-text text-right action-buttons">
+            <i class="lba lba-basic-trashcan delete" (click)="delete(note.id)"></i>
+            <i class="lso lso-software-pencil edit" (click)="toggleEditMode()"></i>
+        </div>
+    </div>
+
+    <div class="card-body" *ngIf="editMode">
+        <form
+            [formGroup]="editNoteForm"
+            (ngSubmit)="updateNote(editNoteForm.value)"
+            autocomplete="off"
+            spellcheck="false"
+        >
+            <div class="card-title">
+                <input class="form-control" formControlName="title" />
+            </div>
+            <hr />
+            <div class="card-text">
+                <textarea class="form-control" formControlName="description"></textarea>
+            </div>
+            <div class="card-text text-right">
+                <button class="btn save" type="submit" [disabled]="editNoteForm.invalid">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
