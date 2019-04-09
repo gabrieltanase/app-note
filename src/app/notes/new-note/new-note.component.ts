@@ -13,7 +13,6 @@ export class NewNoteComponent implements OnInit {
     constructor(private noteService: NotesService) {}
 
     createNewNote(note) {
-        console.log(note);
         this.noteService.addNote(note);
         this.initForm();
     }
