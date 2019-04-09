@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="36px" viewBox="0 0 40 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notes__overview" transform="translate(-658.000000, -21.000000)" fill="#FFFFFF">
+            <g id="Header">
+                <g id="Logo" transform="translate(658.000000, 0.000000)">
+                    <g id="wrapper">
+                        <g id="Logo" transform="translate(0.000000, 21.000000)">
+                            <polygon id="Fill-1" points="32.5603571 4.93150685e-05 23.5134739 5.30437808 23.5134739 10.445474 28.1590642 13.7096384 28.6481515 14.0361041 28.6481515 14.6071726 28.6481515 31.8255288 32.5603571 33.1308986 39.8951885 30.6015288 39.8951885 5.22251507"></polygon>
+                            <polygon id="Fill-2" points="20.1718208 9.30299178 27.5071448 14.4440877 27.5071448 31.9889096 20.1718208 34.3555397 16.2596152 33.3756493 16.2596152 23.2571836 16.2596152 22.6861151 15.7705279 22.3596493 11.1249377 19.3405808 11.1249377 14.4440877"></polygon>
+                            <path d="M8.31320302,18.8915178 L15.1594397,23.2983123 L15.1594397,33.580011 L8.31320302,35.7834082 C8.31320302,35.7834082 0.326255195,33.4167781 0.000197014006,33.4167781 L0.000197014006,23.5429151 L8.31320302,18.8915178" id="Fill-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
